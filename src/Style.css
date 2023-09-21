@@ -75,4 +75,75 @@ ul{
   display: grid;
   padding: var(--gap);
   gap: var(--gap);
+  grid-template-columns: 240px auto;
+}
+
+/* SideNav */
+
+.sidenav li {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-s);
+}
+
+.sidenav li span {
+  width: 2rem;
+  height: 2rem;
+  background: var(--color-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--gap);
+}
+
+.sidenav li a{
+  flex: 1;
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: var(--color-1);
+  padding: var(--gap-s) 0;
+}
+
+.sidenav li:hover span{
+  background: var(--color-3);
+}
+
+/* daterange */
+
+.daterange{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: var(--gap);
+}
+
+/* Resumo */
+
+.resumo{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.resumo h2 {
+  font-size: 1.5rem;
+  margin-bottom: var(--gap);
+  color: var(--color-1);
+}
+
+/* Venda */
+
+.venda{
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: var(--gap);
+  margin-bottom: var(--gap-s);
+  align-items: center;
+}
+
+.venda div:last-child{
+  justify-self: end;
+}
+
+.venda a {
+  text-decoration: none;
+  color: inherit;
 }
